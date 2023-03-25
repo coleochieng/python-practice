@@ -1,1 +1,2 @@
-# hello.py
+# A Repository for simple python exercises
+
