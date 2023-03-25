@@ -1,2 +1,2 @@
-# A Repository for simple python exercises
+# A repository for simple python exercises
 
