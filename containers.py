@@ -4,10 +4,18 @@ student = {
     'age': 5
 }
 
+''''
 name = student['name']
 print(name)
 
 student['name'] = 'Olivia'
 print(student['name'])
+'''
 
-print(student.get('mname', 'Geno'))
+if 'school' in student:
+    print( f"{student['name']} goes to {student['school']}")
+else:
+   print( f"{student['name']} is not enrolled in public school")
+          
+          
+
