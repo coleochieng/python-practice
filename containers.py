@@ -70,6 +70,24 @@ print(students[1])
 print(students[-1])
 
 
+#Exercise 2
+foods = ('apple', 'banana', 'cantaloupe', 'date', 'eggplant', 'fish')
+for food in foods:
+    print( f"{food} is a good food")
+
+
+#Exercise 3
+for idx, food in foods:
+    if idx > 3:
+        print(food)
+
+
+
+
+
+
+
+
 
 
           
