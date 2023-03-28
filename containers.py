@@ -16,6 +16,18 @@ if 'school' in student:
     print( f"{student['name']} goes to {student['school']}")
 else:
    print( f"{student['name']} is not enrolled in public school")
-          
+
+student['teacher'] = 'Ms. Otto'
+print(student)
+
+del student['teacher']
+print(student)
+
+present = 'teacher' in student
+print(present)
+
+
+
+
           
 
