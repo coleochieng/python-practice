@@ -1,10 +1,10 @@
+'''
 student = {
     'name': 'Ellie',
     'school': 'Heritage Elementary',
     'age': 5
 }
 
-''''
 name = student['name']
 print(name)
 
@@ -48,8 +48,6 @@ where_my_things_are = {
 for key, val in where_my_things_are.items():
     print(f'My {key} is kept {val}')
 
-'''
-
 scores = [
     {
      'name': 'Bill',
@@ -64,8 +62,12 @@ scores = [
 for score in scores:
     print(f"{score['name']} scored {score['points']} points")
 
+'''
 
-
+#Exercise 1
+students = ['Ann', 'Beth', 'Catherine', 'Doris', 'Emma', 'Fiona']
+print(students[1])
+print(students[-1])
 
 
 
