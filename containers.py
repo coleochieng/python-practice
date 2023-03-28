@@ -77,9 +77,39 @@ for food in foods:
 
 
 #Exercise 3
-for idx, food in foods:
-    if idx > 3:
-        print(food)
+for food in foods[-2:]:
+    print(food)
+
+
+#Exercise 4
+home_town = {
+    'city': 'Pleasantville',
+    'state': 'North Carolina',
+    'population': 5000
+}
+print( f"I was born in {home_town['city']}, {home_town['state']} - population of {home_town['population']}")
+
+
+#Exercise 5
+for key, val in home_town.items():
+    print( f"{key} = {val}")
+
+
+#Exercise 6
+cohort = []
+for idx, student in enumerate(students):
+    cohort.append({
+        'student': student,
+        'fav_food': foods[idx]
+    })
+print(cohort)
+
+
+#Exercise 7
+awesome_students = [ f"{name} is awesome!" for name in students]
+for student in awesome_students:
+    print(student)
+
 
 
 
