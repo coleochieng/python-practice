@@ -111,6 +111,13 @@ for student in awesome_students:
     print(student)
 
 
+#Exercise 8
+a_foods = []
+for food in foods:
+    if 'a' in food:
+        a_foods.append(food)
+print(a_foods)
+
 
 
 
