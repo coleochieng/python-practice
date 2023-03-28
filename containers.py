@@ -35,6 +35,11 @@ for key in student:
 all = student.items()
 print(all)
 
+for key, val in student.items():
+    print(f'{key} ={val}')
+
+
+
 
 
 
