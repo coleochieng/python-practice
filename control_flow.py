@@ -34,13 +34,13 @@ if color == 'quit':
 
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
-
+'''
 letter = input('Please enter a letter form the alphabet (a-z) or (A-Z): ').lower()
 if letter in 'a e i o u':
     print( f"The letter {letter} is a vowel")
 else:
     print( f"The letter {letter} is a consoant")
-
+'''
 
 
 # exercise-02 Length of Phrase
@@ -51,6 +51,15 @@ else:
 # 2. Print the following message:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
+
+phrase = input('Please enter a word or phrase: ').lower().strip()
+
+while phrase != 'quit':
+    print( f'What you entered is {len(phrase)} characters long')
+    phrase = input('Please enter a word or phrase: ').lower().strip()
+ 
+if phrase == 'quit':
+    breakpoint
 
 
 
