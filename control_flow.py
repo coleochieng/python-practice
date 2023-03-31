@@ -27,21 +27,19 @@ if color == 'quit':
 # Write the code that:
 # 1. Prompts the user to enter a letter in the alphabet:
 #      Please enter a letter from the alphabet (a-z or A-Z): 
-letter = input('Please enter a letter form the alphabet (a-z) or (A-Z): ').lower()
-
 # 2. Write the code that determines whether the letter entered is a vowel
 # 3. Print one of following messages (substituting the letter for x):
 #      - The letter x is a vowel
 #      - The letter x is a consonant
-if letter == 'a' or 'e' or 'i' or 'o' or 'u':
-    print( f"The letter {letter} is a vowel")
-else:
-    print( f"The letter {letter} is a consoant")
 
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
 
-
+letter = input('Please enter a letter form the alphabet (a-z) or (A-Z): ').lower()
+if letter in 'a e i o u':
+    print( f"The letter {letter} is a vowel")
+else:
+    print( f"The letter {letter} is a consoant")
 
 
 
@@ -53,6 +51,7 @@ else:
 # 2. Print the following message:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
+
 
 
 
