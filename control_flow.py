@@ -40,7 +40,7 @@ if letter in 'a e i o u':
     print( f"The letter {letter} is a vowel")
 else:
     print( f"The letter {letter} is a consoant")
-'''
+
 
 
 # exercise-02 Length of Phrase
@@ -60,7 +60,7 @@ while phrase != 'quit':
  
 if phrase == 'quit':
     breakpoint
-
+'''
 
 
 
@@ -81,6 +81,13 @@ if phrase == 'quit':
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 
+dog_age = input("Input a dog's age: ")
+
+if dog_age < 3:
+    dog_years = dog_age * 2
+    print( f"The dog's age in dog years is {dog_years}")
+if dog_age > 2:
+    
 
 
 
