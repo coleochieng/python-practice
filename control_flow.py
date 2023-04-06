@@ -60,7 +60,7 @@ while phrase != 'quit':
  
 if phrase == 'quit':
     breakpoint
-'''
+
 
 
 
@@ -81,14 +81,16 @@ if phrase == 'quit':
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 
-dog_age = input("Input a dog's age: ")
-
+dog_age = int(input("Input a dog's age: "))
+5
 if dog_age < 3:
     dog_years = dog_age * 2
     print( f"The dog's age in dog years is {dog_years}")
 if dog_age > 2:
-    
+    dog_years = 20 + (dog_age - 2)*7
+    print( f"The dog's age in dog years is {dog_years}")
 
+'''
 
 
 
@@ -106,6 +108,7 @@ if dog_age > 2:
 #      isosceles - exactly two sides are the same length
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
+
 
 
 
