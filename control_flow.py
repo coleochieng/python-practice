@@ -142,14 +142,14 @@ if (a == b and b != c) or (b == c and c != a) or (c == a and a != b):
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
 
-a = 1
+a = 0
 b = 1
-for term in range(50)
+for term in range(50):
     if term < 2:
         print( f"term: {term} / number: {term}")
     else:
         c = a + b
-        print( f"term: {term} / number: {num}")
+        print( f"term: {term} / number: {c}")
         a = b
         b = c
 
