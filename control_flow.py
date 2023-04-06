@@ -90,7 +90,7 @@ if dog_age > 2:
     dog_years = 20 + (dog_age - 2)*7
     print( f"The dog's age in dog years is {dog_years}")
 
-'''
+
 
 
 
@@ -109,10 +109,19 @@ if dog_age > 2:
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
+print('Enter the lengths of three sides of a triangle:')
+a = input('a: ')
+b = input('b: ')
+c = input('c: ')
 
+if a == b and b == c and c == a:
+    print( f"A triangle with sides of {a}, {b}, and {c} is an equilateral triangle")
+if a != b and b != c and c != a:
+    print( f"A triangle with sides of {a}, {b}, and {c} is a scalene triangle")
+if (a == b and b != c) or (b == c and c != a) or (c == a and a != b):
+    print( f"A triangle with sides of {a}, {b}, and {c} is an isoceles triangle")
 
-
-
+'''
 
 
 # exercise-05 Fibonacci sequence for first 50 terms
@@ -133,6 +142,16 @@ if dog_age > 2:
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
 
+a = 1
+b = 1
+for term in range(50)
+    if term < 2:
+        print( f"term: {term} / number: {term}")
+    else:
+        c = a + b
+        print( f"term: {term} / number: {num}")
+        a = b
+        b = c
 
 
 
