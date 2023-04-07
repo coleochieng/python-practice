@@ -19,7 +19,7 @@ while color != 'quit':
 
 if color == 'quit':
     print('The user has quit')
-'''
+
 
 #control flow lab
 # exercise-01 Vowel or Consonant
@@ -34,7 +34,7 @@ if color == 'quit':
 
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
-'''
+
 letter = input('Please enter a letter form the alphabet (a-z) or (A-Z): ').lower()
 if letter in 'a e i o u':
     print( f"The letter {letter} is a vowel")
@@ -93,7 +93,6 @@ if dog_age > 2:
 
 
 
-
 # exercise-04 What kind of Triangle?
 
 # Write the code that:
@@ -121,7 +120,6 @@ if a != b and b != c and c != a:
 if (a == b and b != c) or (b == c and c != a) or (c == a and a != b):
     print( f"A triangle with sides of {a}, {b}, and {c} is an isoceles triangle")
 
-'''
 
 
 # exercise-05 Fibonacci sequence for first 50 terms
@@ -153,7 +151,7 @@ for term in range(50):
         a = b
         b = c
 
-
+'''
 
 
 # exercise-06 What's the Season?
@@ -178,6 +176,17 @@ for term in range(50):
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
 
+month = str(input('Enter the month of the year (Jan - Dec): ')).capitalize()
+day = int(input('Enter the day of the month: '))
+
+if (month == 'Dec' and day > 20) or (month == 'Jan') or (month == 'Feb') or (month == 'Mar' and day < 20):
+    print( f"{month} {day} is in winter")
+if (month == 'Mar' and day > 19) or (month == 'Apr') or (month == 'May') or (month == 'Jun' and day < 21):
+    print( f"{month} {day} is in spring")
+if (month == 'Jun' and day > 20) or (month == 'Jul') or (month == 'Aug') or (month == 'Sep' and day < 22):
+    print( f"{month} {day} is in summer")
+if (month == 'Sep' and day > 21) or (month == 'Oct') or (month == 'Nov') or (month == 'Dec' and day < 21):
+    print( f"{month} {day} is in fall")
 
 
 
