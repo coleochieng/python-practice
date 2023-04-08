@@ -26,9 +26,23 @@ def fave_albums(genre, *args):
 
 print( fave_albums('rock', 'Oracular Spectacular', 'King of Limbs', 'In Rainbows', 'Is This It') )
 
-'''
+
 
 def album_rank(artist, **kwargs):
     list = {'name': artist, 'albums': kwargs}
     return list
 print( album_rank('Kanye', MBDTF=2, Yeezus=3, Graduation=1) )
+'''
+#from example
+def arg_demo(pos1, pos2, *args, **kwargs):
+  print(f'Positional params: {pos1}, {pos2}')
+  print('*args:')
+  for arg in args:
+    print(' ', arg)
+  print('**kwargs:')
+  for keyword, value in kwargs.items():
+    print(f'  {keyword}: {value}')
+
+arg_demo('A', 'B', 1, 2, 3, color='purple', shape='circle')
+
+
