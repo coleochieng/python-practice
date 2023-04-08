@@ -45,13 +45,15 @@ def arg_demo(pos1, pos2, *args, **kwargs):
 
 arg_demo('A', 'B', 1, 2, 3, color='purple', shape='circle')
 '''
+
 #write a function with required positional, optional positional, and keyword arguments
 
 def immigrant_family(original_country, new_country, *args, **kwargs):
-    print( f"My parents moved from {original_country} to {new_country} when they were 20. They had kids: {list(args)}.")
-   #too many values to unpack, begin debug here
-    for keyword, value in kwargs:
+    print( f"My parents moved from {original_country} to {new_country} when they were 20. They have the following kids: ")
+    for arg in args:
+        print(' ', arg)
+    for keyword, value in kwargs.items():
         print( f"{keyword} is {value} years old")
 
-print( immigrant_family('Kenya', 'Ameica', 'Nicole', 'Chloe', 'Olivia', 'Ellie', Nicole=24, Chloe=11, Olivia=8, Ellie=6) )
+print( immigrant_family('Kenya', 'America', 'Nicole', 'Chloe', 'Olivia', 'Ellie', Nicole=24, Chloe=11, Olivia=8, Ellie=6))
 
