@@ -44,7 +44,7 @@ def arg_demo(pos1, pos2, *args, **kwargs):
     print(f'  {keyword}: {value}')
 
 arg_demo('A', 'B', 1, 2, 3, color='purple', shape='circle')
-'''
+
 
 #write a function with required positional, optional positional, and keyword arguments
 
@@ -56,4 +56,18 @@ def immigrant_family(original_country, new_country, *args, **kwargs):
         print( f"{keyword} is {value} years old")
 
 print( immigrant_family('Kenya', 'America', 'Nicole', 'Chloe', 'Olivia', 'Ellie', Nicole=24, Chloe=11, Olivia=8, Ellie=6))
+
+'''
+
+
+#functions lab
+#challenge 1
+def sum_to(x):
+    ans = 0
+    for n in range(1, x + 1):
+        ans += n
+    return ans
+
+print( sum_to(6) )
+print( sum_to(10) )
 
