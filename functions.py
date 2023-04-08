@@ -19,7 +19,6 @@ def artist_work(artist_name, *args):
 
 print( artist_work('Radiohead', 'Nude', 'Separator', 'Little by Little', 'Lotus Flower') )
 
-'''
 
 def fave_albums(genre, *args):
     best_of = {'name': genre, 'albums': list(args)}
@@ -27,3 +26,9 @@ def fave_albums(genre, *args):
 
 print( fave_albums('rock', 'Oracular Spectacular', 'King of Limbs', 'In Rainbows', 'Is This It') )
 
+'''
+
+def album_rank(artist, **kwargs):
+    list = {'name': artist, 'albums': kwargs}
+    return list
+print( album_rank('Kanye', MBDTF=2, Yeezus=3, Graduation=1) )
