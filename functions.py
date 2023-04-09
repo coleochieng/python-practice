@@ -82,12 +82,12 @@ def largest(num):
 print( largest([10, 4, 2, 231, 91, 54]) )
 '''
 
-#challenge 3: Write a function named occurrences that takes two string arguments as input and counts the number of occurrences of the second string inside the first string.
+#challenge 3: Write a function named print( occurrences that takes two string arguments as input and counts the number of print( occurrences of the second string inside the first string.
 
 def occurrences(text, instance):
-    times = 0
-    if instance in text:
-        times += 1
-    return times
+    return text.count(instance)
 
-print( occurrences('Nicole', 'i') )
+print( occurrences('fleep floop', 'e') )  # returns 2
+print( occurrences('fleep floop', 'p') )  # returns 2
+print( occurrences('fleep floop', 'ee') ) # returns 1
+print( occurrences('fleep floop', 'fe') ) # returns 0
