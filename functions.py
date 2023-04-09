@@ -57,11 +57,10 @@ def immigrant_family(original_country, new_country, *args, **kwargs):
 
 print( immigrant_family('Kenya', 'America', 'Nicole', 'Chloe', 'Olivia', 'Ellie', Nicole=24, Chloe=11, Olivia=8, Ellie=6))
 
-'''
 
 
 #functions lab
-#challenge 1
+#challenge 1: Write a function named sum_to that accepts a single integer, n, and returns the sum of the integers from 1 to n.
 def sum_to(x):
     ans = 0
     for n in range(1, x + 1):
@@ -71,3 +70,24 @@ def sum_to(x):
 print( sum_to(6) )
 print( sum_to(10) )
 
+
+
+#challenge 2: Write a function named largest that takes a list of numbers as an argument and returns the largest number in that list.
+
+def largest(num):
+    num.sort()
+    highest = num[-1]
+    return highest
+
+print( largest([10, 4, 2, 231, 91, 54]) )
+'''
+
+#challenge 3: Write a function named occurrences that takes two string arguments as input and counts the number of occurrences of the second string inside the first string.
+
+def occurrences(text, instance):
+    times = 0
+    if instance in text:
+        times += 1
+    return times
+
+print( occurrences('Nicole', 'i') )
