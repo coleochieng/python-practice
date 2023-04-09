@@ -80,7 +80,7 @@ def largest(num):
     return highest
 
 print( largest([10, 4, 2, 231, 91, 54]) )
-'''
+
 
 #challenge 3: Write a function named print( occurrences that takes two string arguments as input and counts the number of print( occurrences of the second string inside the first string.
 
@@ -91,3 +91,16 @@ print( occurrences('fleep floop', 'e') )  # returns 2
 print( occurrences('fleep floop', 'p') )  # returns 2
 print( occurrences('fleep floop', 'ee') ) # returns 1
 print( occurrences('fleep floop', 'fe') ) # returns 0
+
+
+#challenge 4: Write a function named print(  that takes an arbitrary number of numbers, multiplies them all together, and returns the print( .
+def product(*args):
+    value = 1
+    for arg in args:
+        value *= arg
+    return value
+
+print( product(-1, 4) ) # returns -4
+print( product(2, 5, 5) ) # returns 50
+print( product(4, 0.5, 5) ) # returns 10.0
+'''
