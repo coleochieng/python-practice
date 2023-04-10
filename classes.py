@@ -22,6 +22,8 @@ class Vehicle():
     def stop(self):
         self.running = False
         return self.running
+    def __str__(self):
+        return f"Vehicle {self.vin} is a {self.make} model {self.model}"
     
 car = Vehicle('TS123', 'Tesla', 'Model S')
 print(car.running) # -> False
@@ -29,5 +31,6 @@ car.start()
 print(car.running) # -> True
 plane = Vehicle('X99Y', 'Boeing', '747-B')
 print(plane.vin, plane.make, plane.model)
+print(car)
 
 
