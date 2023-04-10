@@ -1,15 +1,32 @@
-#class example
-'''
+#example from lesson
+
 class Dog():
+  #class attribute
+  next_id = 1
+
+  #updated __init__
   def __init__(self, name, age=0):
     self.name = name
     self.age = age
+    self.id = Dog.next_id
+    Dog.next_id += 1
 
   def bark(self):
     print(f'{self.name} says woof!')
 
-'''
+  #updated __str__
+  def __str__(self):
+    return f"Dog {self.id} named {self.name} is {self.age} years old" 
+  
+spot = Dog('Spot', 8)
+print(spot)
+pup = Dog('Lassie')
+print(pup)
 
+
+
+'''
+#practice
 class Vehicle():
     def __init__(self, vin, make, model, running=False):
         self.vin = vin
@@ -32,5 +49,5 @@ print(car.running) # -> True
 plane = Vehicle('X99Y', 'Boeing', '747-B')
 print(plane.vin, plane.make, plane.model)
 print(car)
-
+'''
 
