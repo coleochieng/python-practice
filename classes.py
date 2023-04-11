@@ -1,5 +1,5 @@
 import random
-
+'''
 #example from lesson
 
 class Dog():
@@ -32,7 +32,7 @@ print(pup)
 
 print(Dog.get_total_dogs())
 
-'''
+
 class ShowDog(Dog):
     def __init__(self, name, age=0, total_earnings=0):
       Dog.__init__(self, name, age)
@@ -82,7 +82,8 @@ class BankAccount():
     def __init__(self, owner, balance):
         self.owner = owner
         self.balance = balance
-        self.account_no = random.randint(111111111, 999999999)
+        account_no = random.randint(111111111, 999999999)
+        self.account_no = account_no
     
     def deposit(self, amount):
         self.balance += amount
@@ -92,12 +93,14 @@ class BankAccount():
         self.balance -= amount
         return self.balance
     
+    def __str__(self, balance):
+        return f'Account: {self.account_no} / Balance: {balance}'
+    
 my_money = BankAccount('Nicole', 100000)
-print(my_money.withdraw(20000))
-print(my_money.deposit(50000))
-your_money = BankAccount('Diddy', 10000000)
-print(your_money.withdraw(1000000))
-print(your_money.deposit(500000))
+
+
+#your_money = BankAccount('Diddy', 10000000)
+
 
     
 
