@@ -79,7 +79,7 @@ print(car)
 
 #Practice Exercise
 class BankAccount():
-    def __init__(self, owner, balance):
+    def __init__(self, owner, balance=0):
         self.owner = owner
         self.balance = balance
         account_no = random.randint(111111111, 999999999)
@@ -93,10 +93,11 @@ class BankAccount():
         self.balance -= amount
         return self.balance
     
-    def __str__(self, balance):
-        return f'Account: {self.account_no} / Balance: {balance}'
+    def __str__(self):
+        return f'Account: {self.account_no} / Balance: {self.balance}'
     
 my_money = BankAccount('Nicole', 100000)
+print(my_money)
 
 
 #your_money = BankAccount('Diddy', 10000000)
