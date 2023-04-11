@@ -105,8 +105,11 @@ class BankAccount():
         return f'Account: {self.account_no} / Balance: {self.balance}'
     
 my_money = BankAccount('Nicole', 100000)
-print(my_money)
+#print(my_money.withdraw(200000))
+#print(my_money.withdraw(200000, has_overdraft=True))
+print(my_money.withdraw(5))
 
+'''
 class SavingAccount(BankAccount):
     def __init__(self, owner, balance=0):
         BankAccount.__init__(self, owner, balance)
@@ -116,7 +119,7 @@ class SavingAccount(BankAccount):
     
 broke = SavingAccount('Nicole', 100000)
 print(broke.withdraw(500))
-        
+'''        
 
 
 #your_money = BankAccount('Diddy', 10000000)
