@@ -1,3 +1,5 @@
+import random
+'''
 #example from lesson
 
 class Dog():
@@ -18,12 +20,12 @@ class Dog():
   def __str__(self):
     return f"Dog {self.id} named {self.name} is {self.age} years old" 
 
-'''
+
 spot = Dog('Spot', 8)
 print(spot)
 pup = Dog('Lassie')
 print(pup)
-'''
+
 
 class ShowDog(Dog):
     def __init__(self, name, age=0, total_earnings=0):
@@ -40,11 +42,6 @@ winky.bark() # Yay, inherited the bark method
 print(winky.total_earnings) # -> 1000
 winky.add_prize_money(500) # New method that 'Dogs' don't have
 print(winky.total_earnings) # -> 1500
-
-
-  
-
-
 
 
 
@@ -64,7 +61,7 @@ class Vehicle():
     def __str__(self):
         return f"Vehicle {self.vin} is a {self.make} model {self.model}"
 
-'''    
+   
 car = Vehicle('TS123', 'Tesla', 'Model S')
 print(car.running) # -> False
 car.start()
@@ -73,4 +70,20 @@ plane = Vehicle('X99Y', 'Boeing', '747-B')
 print(plane.vin, plane.make, plane.model)
 print(car)
 '''
+
+#Practice Exercise
+class BankAccount():
+    def __init__(self, owner, balance, account_no,):
+        self.owner = owner
+        self.balance = balance
+        self.account_no = 
+    
+    def deposit(self, amount):
+        self.balance += amount
+        return self.balance
+    
+    def withdraw(self, amount):
+        self.balance -= amount
+        return self.balance
+    
 
