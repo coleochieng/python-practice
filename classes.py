@@ -73,10 +73,10 @@ print(car)
 
 #Practice Exercise
 class BankAccount():
-    def __init__(self, owner, balance, account_no,):
+    def __init__(self, owner, balance):
         self.owner = owner
         self.balance = balance
-        self.account_no = 
+        self.account_no = random.randint(111111111, 999999999)
     
     def deposit(self, amount):
         self.balance += amount
@@ -85,5 +85,13 @@ class BankAccount():
     def withdraw(self, amount):
         self.balance -= amount
         return self.balance
+    
+my_money = BankAccount('Nicole', 100000)
+print(my_money.withdraw(20000))
+print(my_money.deposit(50000))
+your_money = BankAccount('Diddy', 10000000)
+print(your_money.withdraw(1000000))
+print(your_money.deposit(500000))
+
     
 
