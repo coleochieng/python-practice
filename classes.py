@@ -1,5 +1,5 @@
 import random
-'''
+
 #example from lesson
 
 class Dog():
@@ -19,6 +19,10 @@ class Dog():
   #updated __str__
   def __str__(self):
     return f"Dog {self.id} named {self.name} is {self.age} years old" 
+  
+  @classmethod
+  def get_total_dogs(cls):
+     return cls.next_id - 1
 
 
 spot = Dog('Spot', 8)
@@ -26,7 +30,9 @@ print(spot)
 pup = Dog('Lassie')
 print(pup)
 
+print(Dog.get_total_dogs())
 
+'''
 class ShowDog(Dog):
     def __init__(self, name, age=0, total_earnings=0):
       Dog.__init__(self, name, age)
