@@ -79,19 +79,27 @@ print(car)
 
 #Practice Exercise
 class BankAccount():
-    def __init__(self, owner, balance=0):
+    def __init__(self, owner, balance=0, has_overdaft=False):
         self.owner = owner
         self.balance = balance
         account_no = random.randint(111111111, 999999999)
         self.account_no = account_no
+        self.has_overdraft = has_overdaft
     
     def deposit(self, amount):
         self.balance += amount
         return self.balance
     
-    def withdraw(self, amount):
-        self.balance -= amount
-        return self.balance
+    def withdraw(self, amount, has_overdraft=False):
+        if amount > self.balance:
+            if has_overdraft == False:
+                return 'Insufficient funds'
+            if has_overdraft == True:
+                self.balance -= amount
+                return self.balance
+        elif amount < self.balance:
+          self.balance -= amount
+          return self.balance
     
     def __str__(self):
         return f'Account: {self.account_no} / Balance: {self.balance}'
@@ -109,7 +117,6 @@ class SavingAccount(BankAccount):
 broke = SavingAccount('Nicole', 100000)
 print(broke.withdraw(500))
         
-
 
 
 #your_money = BankAccount('Diddy', 10000000)
