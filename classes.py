@@ -102,8 +102,14 @@ print(my_money)
 class SavingAccount(BankAccount):
     def __init__(self, owner, balance=0):
         BankAccount.__init__(self, owner, balance)
-        def withdrawal():
-            return 'No withdrawals permitted'
+        
+    def withdraw(self, amount):
+        return 'No withdrawals permitted'
+    
+broke = SavingAccount('Nicole', 100000)
+print(broke.withdraw(500))
+        
+
 
 
 #your_money = BankAccount('Diddy', 10000000)
